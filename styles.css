@@ -75,7 +75,7 @@ button:hover {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
+    }
 
 .top-bar .container {
     display: flex;
@@ -118,6 +118,11 @@ button:hover {
 .banner-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+}
+
+/* Product Content Section */
+.product-content {
+    margin-top: calc(30px + 70px); /* 确保 section 不被顶部装饰条遮挡 */
 }
 
 /* Company Vision Section */
@@ -229,6 +234,10 @@ footer {
     }
 
     .banner {
+        margin-top: calc(40px + 80px); /* 移动端 top-bar高度 + header高度 */
+    }
+
+    .product-content {
         margin-top: calc(40px + 80px); /* 移动端 top-bar高度 + header高度 */
     }
 
