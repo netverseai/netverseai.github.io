@@ -6,6 +6,7 @@
     <title>网镜智能 - Netverse Intelligence</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="version" content="1.0.0"> <!-- 添加版本号 -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -120,7 +121,16 @@
             </div>
             <div class="subscribe">
                 <p data-chinese="现在，是时候订阅我们了吧：）" data-english="Subscribe now :）">现在，是时候订阅我们了吧：）</p>
-                <input type="email" placeholder="轻松输入邮箱地址 Enter your e-mail" class="email-input">
+                <form action="https://netverseai.us10.list-manage.com/subscribe/post?u=0ec44745bae6469b2fe7143a2&amp;id=7f4fe1b4e5&amp;f_id=00cd56e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div class="mc-field-group">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" placeholder="轻松输入邮箱地址 Enter your e-mail">
+                    </div>
+                    <div hidden><input type="hidden" name="tags" value="14567300"></div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_0ec44745bae6469b2fe7143a2_7f4fe1b4e5" tabindex="-1" value="">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="订阅 Subscribe">
+                    </div>
+                </form>
                 <p data-chinese="请安心，保护好您的个人隐私是我们应有的教养：）" data-english="Don't worry. We won't send you spam :）">请安心，保护好您的个人隐私是我们应有的教养：）</p>
             </div>
         </div>
@@ -132,5 +142,16 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <!-- 在 </body> 标签前添加 -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+    </script>
 </body>
 </html>

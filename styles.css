@@ -274,6 +274,33 @@ footer {
     .banner-content p {
         font-size: 1rem;
     }
+
+    /* 添加或修改 subscribe 相关样式 */
+    .subscribe form {
+        margin: 20px 0;
+    }
+
+    .subscribe input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .subscribe input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .subscribe input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
 }
 
 
