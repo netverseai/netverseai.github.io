@@ -1,3 +1,23 @@
+// 检查更新并清除缓存
+document.addEventListener('DOMContentLoaded', function () {
+    const currentVersion = document.querySelector('meta[name="version"]').getAttribute('content');
+    const cachedVersion = localStorage.getItem('siteVersion');
+
+    if (cachedVersion !== currentVersion) {
+        localStorage.setItem('siteVersion', currentVersion);
+        clearCacheAndReload();
+    }
+});
+
+function clearCacheAndReload() {
+    if ('caches' in window) {
+        caches.keys().then(function (names) {
+            for (let name of names) caches.delete(name);
+        });
+    }
+    window.location.reload(true);
+}
+
 // Language Toggle
 document.getElementById('languageToggle').addEventListener('click', function () {
     const elements = document.querySelectorAll('[data-chinese], [data-english]');
