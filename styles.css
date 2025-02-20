@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Source Han Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('fonts/SourceHanSansCN-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('fonts/SourceHanSansCN-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Banner Section */
+.banner {
+    height: 100vh;
+    background-image: url('images/Gripper-i 发布.001.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Company Vision Section */
+.company-vision {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.vision-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.vision-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.vision-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-us {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Language Toggle */
+#languageToggle {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#languageToggle:hover {
+    background-color: #0056b3;
+}
+
+
