@@ -2,10 +2,23 @@
 document.getElementById('languageToggle').addEventListener('click', function () {
     const elements = document.querySelectorAll('[data-chinese], [data-english]');
     elements.forEach(element => {
-        if (element.dataset.chinese) {
-            element.textContent = element.dataset.english ? element.dataset.english : element.textContent;
+        if (element.textContent === element.dataset.chinese) {
+            element.textContent = element.dataset.english;
         } else {
-            element.textContent = element.dataset.chinese ? element.dataset.chinese : element.textContent;
+            element.textContent = element.dataset.chinese;
+        }
+    });
+});
+
+// Set default language based on user's system language
+document.addEventListener('DOMContentLoaded', function () {
+    const userLang = navigator.language || navigator.userLanguage;
+    const elements = document.querySelectorAll('[data-chinese], [data-english]');
+    elements.forEach(element => {
+        if (userLang.startsWith('zh')) {
+            element.textContent = element.dataset.chinese;
+        } else {
+            element.textContent = element.dataset.english;
         }
     });
 });

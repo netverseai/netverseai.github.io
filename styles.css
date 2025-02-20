@@ -18,6 +18,13 @@ body {
     font-weight: 400;
 }
 
+.logo {
+    width: 320px;
+    height: 62px;
+    object-fit: contain; /* 保持图像比例 */
+    margin-right: 100px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,8 +36,16 @@ header {
     padding: 20px;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 40px; /* 顶部装饰条高度 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -52,6 +67,33 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* 顶部装饰条 */
+.top-bar {
+    background-color: #44423f;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar .right {
+    text-align: right;
+}
+
+/* LinkedIn 图标 */
+.linkedin-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
 /* Banner Section */
 .banner {
     height: 100vh;
@@ -63,6 +105,7 @@ button:hover {
     justify-content: center;
     text-align: center;
     color: #fff;
+    margin-top: 80px; /* 确保 banner 不被顶部装饰条遮挡 */
 }
 
 .banner-content h2 {
