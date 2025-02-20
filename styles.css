@@ -167,7 +167,7 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #44423f;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -189,6 +189,32 @@ footer {
     margin-right: 10px;
     border: none;
     border-radius: 5px;
+}
+
+/* Bottom Navigation */
+.bottom_nav {
+    color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.bottom_nav span {
+    display: block;
+    margin: 5px 0;
+}
+
+.bottom_nav .right {
+    display: block;
+    margin-top: 5px;
+}
+
+.bottom_nav .img {
+    max-height: 128px; /* 高度不超过两行文字的高度 */
+    max-width: 58%; /* 宽度不超过屏幕的一半 */
+    width: auto; /* 保持宽高比 */
+    vertical-align: middle; /* 垂直居中对齐 */
+    margin: 10px; /* 与文字间距 */
 }
 
 /* Language Toggle */
