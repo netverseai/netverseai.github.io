@@ -68,7 +68,7 @@ button:hover {
 
 /* 顶部装饰条 */
 .top-bar {
-    background-color: #333;
+    background-color: #44423f;
     color: #fff;
     padding: 5px 0;
     position: fixed;
@@ -106,7 +106,8 @@ button:hover {
     justify-content: center;
     text-align: center;
     color: #fff;
-    margin-top: 80px; /* 确保 banner 不被顶部装饰条遮挡 */
+    margin-top: calc(30px + 70px); /* top-bar高度 + header高度 */
+    /* 确保 banner 不被顶部装饰条遮挡 */
 }
 
 .banner-content h2 {
@@ -225,6 +226,10 @@ footer {
     nav a {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .banner {
+        margin-top: calc(40px + 80px); /* 移动端 top-bar高度 + header高度 */
     }
 
     .banner-content h2 {
