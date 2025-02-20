@@ -58,25 +58,25 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-//在移动设备上，虚拟键盘的 "go" 按钮会触发表单提交。
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('mc-embedded-subscribe-form');
-    const emailInput = document.getElementById('mce-EMAIL');
+// //在移动设备上，虚拟键盘的 "go" 按钮会触发表单提交。
+// document.addEventListener('DOMContentLoaded', function() {
+//     const form = document.getElementById('mc-embedded-subscribe-form');
+//     const emailInput = document.getElementById('mce-EMAIL');
 
-    // 处理移动端虚拟键盘的 "go" 按钮事件
-    emailInput.addEventListener('keypress', function(event) {
-        if (event.key === 'Enter' || event.keyCode === 13) {
-            event.preventDefault();
-            if (emailInput.checkValidity()) {
-                form.submit();
-            }
-        }
-    });
+//     // 处理移动端虚拟键盘的 "go" 按钮事件
+//     emailInput.addEventListener('keypress', function(event) {
+//         if (event.key === 'Enter' || event.keyCode === 13) {
+//             event.preventDefault();
+//             if (emailInput.checkValidity()) {
+//                 form.submit();
+//             }
+//         }
+//     });
 
-    // 处理表单提交事件
-    form.addEventListener('submit', function(event) {
-        if (!emailInput.checkValidity()) {
-            event.preventDefault();
-        }
-    });
-});
+//     // 处理表单提交事件
+//     form.addEventListener('submit', function(event) {
+//         if (!emailInput.checkValidity()) {
+//             event.preventDefault();
+//         }
+//     });
+// });

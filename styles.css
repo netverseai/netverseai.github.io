@@ -253,6 +253,7 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+    align-items: center;
 }
 
 .subscribe input[type="submit"]:hover {
@@ -301,6 +302,14 @@ footer {
 
     .banner-content p {
         font-size: 1rem;
+    }
+
+    .subscribe input[type="submit"] {
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+        align-items: center;
     }
 }
 
