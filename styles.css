@@ -98,7 +98,9 @@ button:hover {
 /* Banner Section */
 .banner {
     height: 100vh;
-    position: relative;
+    background-image: url('images/网境智能 PR 素材001.jpeg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,21 +108,6 @@ button:hover {
     color: #fff;
     margin-top: calc(30px + 70px); /* top-bar高度 + header高度 */
     /* 确保 banner 不被顶部装饰条遮挡 */
-}
-
-.banner-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* 确保图片在内容后面 */
-}
-
-.banner-content {
-    position: relative;
-    z-index: 1; /* 确保内容在图片前面 */
 }
 
 .banner-content h2 {
