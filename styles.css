@@ -268,6 +268,15 @@ html {
     margin: 10px 0;
 }
 
+.subscribe input[type="submit"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
 .bottom-nav {
     border-top: 1px solid #fff;
     padding-top: 20px;
