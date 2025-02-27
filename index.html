@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网镜智能 - Netverse Intelligence</title>
+    <meta name="version" content="1.0.3">
+    <title>网境智能 - Netverse Intelligence</title>
+    <!-- Bootstrap CDN (replaces local files for reliability) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Mailchimp CSS -->
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="styles.css">
-    <meta name="version" content="1.0.1"> <!-- 添加版本号 -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-
 </head>
 <body>
-    <!-- 顶部装饰条 -->
+    <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
-            <span>欢迎光临网镜智能官网！</span>
+            <span data-chinese="欢迎光临网境智能官网！" data-english="Welcome to Netverse Intelligence!">欢迎光临网境智能官网！</span>
             <span class="right">
                 <a href="https://www.linkedin.com/company/nvrobotics" target="_blank">
                     <img src="images/logo_linkedin.png" alt="LinkedIn" class="linkedin-icon">
@@ -22,65 +24,77 @@
         </div>
     </div>
 
-    <header>
-        <div class="container">
-            <h1>
-            </h1>
-            <nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container"  href="#home">
+            <a class="navbar-brand">
                 <img src="logo/主标志-黑红.png" alt="Netverse Logo" class="logo">
-
-                <a href="index.html#home">首页 Home</a>
-                <a href="gripper-i.html">产品 Product</a>
-                <a href="index.html#contact">联系我们 Contact</a>
-                <button id="languageToggle">En / 中文</button>
-            </nav>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-chinese="首页" data-english="Home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product" data-chinese="产品" data-english="Product">产品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-chinese="联系我们" data-english="Contact">联系我们</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-secondary btn-language-toggle" id="languageToggle">En / 中文</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
+    <!-- Banner -->
     <section id="home" class="banner">
         <div class="container">
             <div class="banner-content">
                 <h2 data-chinese="观看延伸了语言" data-english="Seeing comes before words!">观看延伸了语言</h2>
                 <p data-chinese="正是观看出脱于你我四周之境自成小宇宙。我们所视与我们所知，二者从未如此泾渭分明，澄澈如镜。凝视是一种本能，更是一种选择。" data-english="It is seeing which established our place in the surrounding world; we explain that world with words, but words can never undo the fact that we are surrounded by it. Staring is more than natural way of instinct, to look is an act of choice.">正是观看出脱于你我四周之境自成小宇宙。我们所视与我们所知，二者从未如此泾渭分明，澄澈如镜。凝视是一种本能，更是一种选择。</p>
-                <button data-chinese="查看更多" data-english="READ MORE">查看更多</button>
+                <button class="btn btn-primary" data-chinese="查看更多" data-english="READ MORE">查看更多</button>
             </div>
         </div>
     </section>
 
+    <!-- Company Vision -->
     <section id="product" class="company-vision">
         <div class="container">
-            <div class="vision-item">
-                <h3 data-chinese="将心比心" data-english="Empathy">将心比心</h3>
-                <p data-chinese="为用户提供随时随地高效的互联网（空间互联网）服务(工具/内容/社交)。" data-english="Provide users with efficient Internet services anytime, anywhere (tools/content/social)">为用户提供随时随地高效的互联网（空间互联网）服务(工具/内容/社交)。</p>
-                <button data-chinese="详情" data-english="MORE">详情</button>
-            </div>
-            <div class="vision-item">
-                <h3 data-chinese="诚挚忠信" data-english="Integrity">诚挚忠信</h3>
-                <p data-chinese="坚持做有用、可靠、创新的产品，在功能、可靠、便捷、价格方面精锐形塑与持续优化更高质的TO B与TO C业务。" data-english="We help people connect with new visual environments using in-depth research, rigorous strategy, well-built technology, and responsive design. We push the boundaries and encourage you to do it with us.">坚持做有用、可靠、创新的产品，在功能、可靠、便捷、价格方面精锐形塑与持续优化更高质的TO B与TO C业务。</p>
-                <button data-chinese="详情" data-english="MORE">详情</button>
-            </div>
-            <div class="vision-item">
-                <h3 data-chinese="从容超越" data-english="Elegance">从容超越</h3>
-                <p data-chinese="让机器更顺应人类本能与惯性，使人与机器人沟通更敏捷与智慧。" data-english="We believe in the power of human nature to interflow and communicate with AI more humanistically, and we love collaborating with you, that feel the same, let’s connect.">让机器更顺应人类本能与惯性，使人与机器人沟通更敏捷与智慧。</p>
-                <button data-chinese="详情" data-english="MORE">详情</button>
+            <div class="row">
+                <div class="col-md-4 vision-item text-center">
+                    <h3 data-chinese="将心比心" data-english="Empathy">将心比心</h3>
+                    <p data-chinese="为用户提供随时随地高效的互联网（空间互联网）服务(工具/内容/社交)。" data-english="Provide users with efficient Internet services anytime, anywhere (tools/content/social)">为用户提供随时随地高效的互联网（空间互联网）服务(工具/内容/社交)。</p>
+                    <button class="btn btn-secondary" data-chinese="详情" data-english="MORE">详情</button>
+                </div>
+                <div class="col-md-4 vision-item text-center">
+                    <h3 data-chinese="诚挚忠信" data-english="Integrity">诚挚忠信</h3>
+                    <p data-chinese="坚持做有用、可靠、创新的产品，在功能、可靠、便捷、价格方面精锐形塑与持续优化更高质的TO B与TO C业务。" data-english="We help people connect with new visual environments using in-depth research, rigorous strategy, well-built technology, and responsive design. We push the boundaries and encourage you to do it with us.">坚持做有用、可靠、创新的产品，在功能、可靠、便捷、价格方面精锐形塑与持续优化更高质的TO B与TO C业务。</p>
+                    <button class="btn btn-secondary" data-chinese="详情" data-english="MORE">详情</button>
+                </div>
+                <div class="col-md-4 vision-item text-center">
+                    <h3 data-chinese="从容超越" data-english="Elegance">从容超越</h3>
+                    <p data-chinese="让机器更顺应人类本能与惯性，使人与机器人沟通更敏捷与智慧。" data-english="We believe in the power of human nature to interflow and communicate with AI more humanistically, and we love collaborating with you, that feel the same, let’s connect.">让机器更顺应人类本能与惯性，使人与机器人沟通更敏捷与智慧。</p>
+                    <button class="btn btn-secondary" data-chinese="详情" data-english="MORE">详情</button>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Us -->
     <section id="contact" class="contact-us">
         <div class="container">
-            <h2 data-chinese="联系我们" data-english="Contact Us">联系我们</h2>
-            <div class="contact-info">
-                <div class="contact-item">
+            <h2 class="text-center" data-chinese="联系我们" data-english="Contact Us">联系我们</h2>
+            <div class="row contact-info">
+                <div class="col-md-4 contact-item text-center">
                     <h3 data-chinese="致电我们" data-english="Call Us">致电我们</h3>
                     <p data-chinese="座机号码: +86 0755 2690 3210 (停用)" data-english="Office Telephone: +86 0755 2690 3210 (Discontinued)">座机号码: +86 0755 2690 3210 (停用)</p>
                 </div>
-                <div class="contact-item">
+                <div class="col-md-4 contact-item text-center">
                     <h3 data-chinese="洽谈会晤" data-english="Come Visit Us">洽谈会晤</h3>
-                    <p data-chinese="地址: 广东省深圳市宝安区新安街道兴东社区68区隆昌路10号美生创谷春谷305" data-english="Address: 305, Spring Valley, Meisheng Innovation Valley, No. 10 Longchang Rd., Block 68, Xingdong Cmty., Xin'an St., Bao'an Dist., Shenzhen, Guangdong, 518000">地址: 广东省深圳市宝安区新安街道兴东社区68区隆昌路10号美生创谷春谷305</p>
+                    <p data-chinese="地址: 广东省深圳市宝安区新安街道兴东社区68区隆昌路10号美生创谷春谷305" data-english="Address: 305, Spring Valley, Meisheng Innovation Valley, No. 10 Longchang Rd., Block 68, Xingdong Cmty., Xin'an St., Bao'an Dist., Shenzhen, Guangdong">地址: 广东省深圳市宝安区新安街道兴东社区68区隆昌路10号美生创谷春谷305</p>
                     <p data-chinese="邮编: 518000" data-english="Postal Code: 518000">邮编: 518000</p>
                 </div>
-                <div class="contact-item">
+                <div class="col-md-4 contact-item text-center">
                     <h3 data-chinese="电邮致函" data-english="Send a Message">电邮致函</h3>
                     <p>
                         <span data-chinese="邮箱" data-english="E-mail">邮箱</span>: 
@@ -99,24 +113,28 @@
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <img src="logo/主标志-白红.png" alt="Netverse Logo" class="logo">
-                <p data-chinese="网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
-                网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
-                "
-                 data-english="Netverse Intelligence focuses on developing adaptive robotics and embodied AI solutions through innovative technologies like a split brain-cerebellum architecture, which decouples multimodal large models (for high-level decision-making) from real-time motion control systems. By prioritizing cost-effective hardware (90% cheaper than traditional solutions) and phased commercialization (from components to full industry solutions), Netverse targets industrial automation upgrades (e.g., manufacturing, logistics) and trillion-dollar general service markets (e.g., healthcare, retail). Their core value lies in accelerating embodied AI adoption by balancing short-term ROI (e.g., 8-month payback) with long-term ecosystem barriers (e.g., developer communities, multi-robot collaboration systems).">
-                 网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
-网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
-</p>
-                <button data-chinese="愿闻其详" data-english="SEE MORE">愿闻其详</button>
-            </div>
-            <div class="footer-info">
-                <p data-chinese="办公/休息时间" data-english="Office Opening Hours">办公/休息时间</p>
-                <p data-chinese="周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm" data-english="Mon. - Fri: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm">周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm</p>
-                <p data-chinese="周六 & 周日: 休息" data-english="Sat./Sun.: Day off">周六 & 周日: 休息</p>
-                <p data-chinese="假日情况: 所有公众假日" data-english="Holidays: All official holidays">假日情况: 所有公众假日</p>
+
+            <div class="row">
+                <div class="col-md-6 footer-content">
+                    <img src="logo/主标志-白红.png" alt="Netverse Logo" class="logo mb-3">
+                    <p data-chinese="网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
+                    网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
+                    "
+                     data-english="Netverse Intelligence focuses on developing adaptive robotics and embodied AI solutions through innovative technologies like a split brain-cerebellum architecture, which decouples multimodal large models (for high-level decision-making) from real-time motion control systems. By prioritizing cost-effective hardware (90% cheaper than traditional solutions) and phased commercialization (from components to full industry solutions), Netverse targets industrial automation upgrades (e.g., manufacturing, logistics) and trillion-dollar general service markets (e.g., healthcare, retail). Their core value lies in accelerating embodied AI adoption by balancing short-term ROI (e.g., 8-month payback) with long-term ecosystem barriers (e.g., developer communities, multi-robot collaboration systems).">
+                     网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
+    网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
+    </p>
+                    <button class="btn btn-outline-light" data-chinese="愿闻其详" data-english="SEE MORE">愿闻其详</button>
+                </div>
+                <div class="col-md-6 footer-info">
+                    <p data-chinese="办公/休息时间" data-english="Office Opening Hours">办公/休息时间</p>
+                    <p data-chinese="周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm" data-english="Mon. - Fri: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm">周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm</p>
+                    <p data-chinese="周六 & 周日: 休息" data-english="Sat./Sun.: Day off">周六 & 周日: 休息</p>
+                    <p data-chinese="假日情况: 所有公众假日" data-english="Holidays: All official holidays">假日情况: 所有公众假日</p>
+                </div>
             </div>
             <div class="subscribe">
                 <p data-chinese="现在，是时候订阅我们了吧：）" data-english="Subscribe now :）">现在，是时候订阅我们了吧：）</p>
@@ -132,26 +150,17 @@
                     </div>
                 </form>
                 <p data-chinese="请安心，保护好您的个人隐私是我们应有的教养：）" data-english="Don't worry. We won't send you spam :）">请安心，保护好您的个人隐私是我们应有的教养：）</p>
+            <div class="bottom-nav text-center mt-4">
+                <img src="logo/辅助图形.png" alt="Graphic" class="img">
+                <span data-chinese="Copyright©2025 网境智能（深圳）有限公司" data-english="Copyright©2025 Netverse Intelligence Co., Ltd.">Copyright©2025 网境智能（深圳）有限公司</span>
+                <span class="right">粤ICP备2022061921号</span>
             </div>
-        </div>
-        <div class="bottom_nav">
-            <img class="img" src="logo/辅助图形.png" alt="辅助图形"/>
-            <span data-chinese="Copyright©2025 网境智能（深圳）有限公司 版权所有" data-english="Copyright©2025 Netverse Intelligence Co., Ltd.">Copyright©2025 网境智能（深圳）有限公司 版权所有</span>
-            <span class="right">粤ICP备2022061921号  粤公网安备 44030502009007号</span>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="scripts.js"></script>
-    <!-- 在 </body> 标签前添加 -->
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
-    (function($) {
-        window.fnames = new Array(); 
-        window.ftypes = new Array();
-        fnames[0]='EMAIL';
-        ftypes[0]='email';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-    </script>
 </body>
 </html>
