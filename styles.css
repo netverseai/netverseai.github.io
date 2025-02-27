@@ -74,7 +74,7 @@ html {
 }
 
 .navbar-brand .logo {
-    width: 120px;
+    width: 240px;
     height: auto;
     object-fit: contain;
 }
@@ -97,25 +97,26 @@ html {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .btn-language-toggle:hover {
-    background-color: #007bff;
-    color: #fff;
+    background-color: transparent;
+    color: #007bff;
     border-color: #007bff;
 }
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
     .navbar-brand .logo {
-        width: 100px;
+        width: 160px;
     }
     .navbar-nav {
         text-align: center;
         padding-top: 10px;
     }
     .navbar-nav .nav-link {
-        margin: 10px 0;
+        margin: 10px 0px;
     }
     .btn-language-toggle {
         margin: 10px auto;
@@ -199,9 +200,12 @@ html {
 }
 
 .btn-secondary {
+    background-color: transparent;
     border: 1px solid #333;
     color: #333;
     padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .btn-secondary:hover {
@@ -231,7 +235,7 @@ html {
 }
 
 .footer .logo {
-    width: 120px;
+    width: 130px;
     margin-bottom: 20px;
 }
 
@@ -241,6 +245,20 @@ html {
 
 .footer-info p {
     margin: 5px 0;
+}
+
+.footer-info .img {
+    max-width: 300px; /* 根据需要调整最大宽度 */
+    max-height: 200px; /* 根据需要调整最大高度 */
+    height: auto;
+    width: auto;
+    display: inline-block; /* 确保图像不会影响文字换行 */
+    vertical-align: middle; /* 垂直对齐文字 */
+}
+
+.subscribe {
+    padding-top: 20px;
+    text-align: center;
 }
 
 .subscribe input {
@@ -257,7 +275,20 @@ html {
     font-size: 0.8rem;
 }
 
-.bottom-nav .img {
-    max-width: 100px;
-    margin-bottom: 10px;
+
+.footer-bottom {
+	background-color: #0d141c;
+	padding: 10px 0
 }
+
+.copyright p {
+	font-size: 13px;
+	text-align: center;
+	color: rgba(255, 255, 255, .7294117647058823)
+}
+
+.copyright a {
+	color: rgba(255, 255, 255, .7294117647058823)
+}
+
+
