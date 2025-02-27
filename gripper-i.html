@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="1.0.3">
     <title>Gripper-i - Netverse Intelligence</title>
+    <link rel="shortcut icon" href="logo/favicon.ico">
+
+    <!-- Bootstrap CDN (replaces local files for reliability) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Mailchimp CSS -->
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="styles.css">
-    <meta name="version" content="1.0.1"> <!-- 添加版本号 -->
 </head>
 <body>
-    <!-- 顶部装饰条 -->
+    <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
-            <span>欢迎光临网镜智能官网！</span>
+            <span data-chinese="欢迎光临网境智能官网！" data-english="Welcome to Netverse Intelligence!">欢迎光临网境智能官网！</span>
             <span class="right">
                 <a href="https://www.linkedin.com/company/nvrobotics" target="_blank">
                     <img src="images/logo_linkedin.png" alt="LinkedIn" class="linkedin-icon">
@@ -20,20 +26,27 @@
         </div>
     </div>
 
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <h1>
-            </h1>
-            <nav>
+            <a class="navbar-brand" href="index.html#home" >
                 <img src="logo/主标志-黑红.png" alt="Netverse Logo" class="logo">
-
-                <a href="index.html#home">首页 Home</a>
-                <a href="gripper-i.html">产品 Product</a>
-                <a href="index.html#contact">联系我们 Contact</a>
-                <button id="languageToggle">En / 中文</button>
-            </nav>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home" data-chinese="首页" data-english="Home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gripper-i.html" data-chinese="产品" data-english="Product">产品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-chinese="联系我们" data-english="Contact">联系我们</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-secondary btn-language-toggle" id="languageToggle">En / 中文</button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <section id="gripper-i" class="product-content">
         <div class="container">
@@ -41,28 +54,74 @@
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <img src="logo/主标志-白红.png" alt="Netverse Logo" class="logo">
-                <p data-chinese="网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
-                网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
-                "
-                 data-english="Netverse Intelligence focuses on developing adaptive robotics and embodied AI solutions through innovative technologies like a split brain-cerebellum architecture, which decouples multimodal large models (for high-level decision-making) from real-time motion control systems. By prioritizing cost-effective hardware (90% cheaper than traditional solutions) and phased commercialization (from components to full industry solutions), Netverse targets industrial automation upgrades (e.g., manufacturing, logistics) and trillion-dollar general service markets (e.g., healthcare, retail). Their core value lies in accelerating embodied AI adoption by balancing short-term ROI (e.g., 8-month payback) with long-term ecosystem barriers (e.g., developer communities, multi-robot collaboration systems).">
-                 网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
-网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
-</p>
-                <button data-chinese="愿闻其详" data-english="SEE MORE">愿闻其详</button>
+
+            <div class="row">
+                <div class="col-md-6 footer-content">
+                    <img src="logo/主标志-白红.png" alt="Netverse Logo" class="logo mb-3">
+                    <p data-chinese="网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
+                    网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
+                    "
+                     data-english="Netverse Intelligence focuses on developing adaptive robotics and embodied AI solutions through innovative technologies like a split brain-cerebellum architecture, which decouples multimodal large models (for high-level decision-making) from real-time motion control systems. By prioritizing cost-effective hardware (90% cheaper than traditional solutions) and phased commercialization (from components to full industry solutions), Netverse targets industrial automation upgrades (e.g., manufacturing, logistics) and trillion-dollar general service markets (e.g., healthcare, retail). Their core value lies in accelerating embodied AI adoption by balancing short-term ROI (e.g., 8-month payback) with long-term ecosystem barriers (e.g., developer communities, multi-robot collaboration systems).">
+                     网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用“大脑-小脑”分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
+    网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
+    </p>
+                    <button class="btn btn-outline-light" data-chinese="愿闻其详" data-english="SEE MORE">愿闻其详</button>
+                </div>
+                <div class="col-md-6 footer-info">
+                    <p><img src="logo/辅助图形.png" alt="Graphic" class="img"></p>
+
+                    <p data-chinese="办公/休息时间" data-english="Office Opening Hours">办公/休息时间</p>
+                    <p data-chinese="周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm" data-english="Mon. - Fri: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm">周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm</p>
+                    <p data-chinese="周六 & 周日: 休息" data-english="Sat./Sun.: Day off">周六 & 周日: 休息</p>
+                    <p data-chinese="假日情况: 所有公众假日" data-english="Holidays: All official holidays">假日情况: 所有公众假日</p>
+                </div>
             </div>
-            <div class="footer-info">
-                <p data-chinese="办公/休息时间" data-english="Office Opening Hours">办公/休息时间</p>
-                <p data-chinese="周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm" data-english="Mon. - Fri: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm">周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm</p>
-                <p data-chinese="周六 & 周日: 休息" data-english="Sat./Sun.: Day off">周六 & 周日: 休息</p>
-                <p data-chinese="假日情况: 所有公众假日" data-english="Holidays: All official holidays">假日情况: 所有公众假日</p>
-            </div>
+            <div class="subscribe">
+                <p data-chinese="现在，是时候订阅我们了吧：）" data-english="Subscribe now :）">现在，是时候订阅我们了吧：）</p>
+                <form action="https://netverseai.us10.list-manage.com/subscribe/post?u=0ec44745bae6469b2fe7143a2&amp;id=7f4fe1b4e5&amp;f_id=00cd56e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div class="mc-field-group">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" placeholder="轻松输入邮箱地址 Enter your e-mail">
+                        <!-- <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="订阅 Subscribe"> -->
+
+                    </div>
+                    <div hidden><input type="hidden" name="tags" value="14567300"></div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_0ec44745bae6469b2fe7143a2_7f4fe1b4e5" tabindex="-1" value="">
+                    </div>
+                </form>
+                <p data-chinese="请安心，保护好您的个人隐私是我们应有的教养：）" data-english="Don't worry. We won't send you spam :）">请安心，保护好您的个人隐私是我们应有的教养：）</p>
         </div>
     </footer>
 
+    <!-- footer bottom -->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-md-12 copyright">
+					<!-- Copyright -->
+                    <p data-chinese="Copyright©2025 网境智能（深圳）有限公司" data-english="Copyright©2025 Netverse Intelligence Co., Ltd.">Copyright©2025 网境智能（深圳）有限公司</p>
+				</div>
+				<div class="col-xl-7 col-md-12 copyright">
+					<p>
+						<!-- ICP 备案号 -->
+						<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022061921号</a>
+						
+						<!-- 公安 备案号 -->
+						<img style="margin-left: 20px;" src="icon/beian.png" />
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502009007"
+							target="_blank">粤公网安备 44030502009007号</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

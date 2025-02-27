@@ -16,11 +16,13 @@ document.getElementById('languageToggle').addEventListener('click', () => {
     document.querySelectorAll('[data-chinese], [data-english]').forEach(el => {
         el.textContent = el.textContent === el.dataset.chinese ? el.dataset.english : el.dataset.chinese;
     });
+    const currentLang = document.querySelector('[data-chinese]').textContent === document.querySelector('[data-chinese]').dataset.chinese ? 'zh' : 'en';
+    localStorage.setItem('preferredLanguage', currentLang);
 });
 
 // Default Language
 document.addEventListener('DOMContentLoaded', () => {
-    const userLang = navigator.language || navigator.userLanguage;
+    const userLang = localStorage.getItem('preferredLanguage') || navigator.language || navigator.userLanguage;
     document.querySelectorAll('[data-chinese], [data-english]').forEach(el => {
         el.textContent = userLang.startsWith('zh') ? el.dataset.chinese : el.dataset.english;
     });
