@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="1.0.3">
+    <title>网境智能 - Netverse Intelligence</title>
+    <link rel="shortcut icon" href="logo/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span data-i18n="welcome">欢迎光临网境智能官网！</span>
+            <span class="right">
+                <a href="https://www.linkedin.com/company/nvrobotics" target="_blank">
+                    <img src="images/logo_linkedin.png" alt="LinkedIn" class="linkedin-icon">
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html#home" >
+                <img src="logo/主标志-黑红.png" alt="Netverse Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home" data-i18n="home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gripper-i.html" data-i18n="product">产品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="contact">联系我们</a></li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-outline-secondary btn-language-toggle dropdown-toggle" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="current-lang">简体中文</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="zh-cn">简体中文</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="zh-tw">繁體中文</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="ja">日本語</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="de">Deutsch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="home" class="banner">
+        <div class="banner-image-fallback" style="display: none;">
+            <img src="./images/netverse_banner.jpeg" alt="Netverse Banner" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="container">
+            <div class="banner-content">
+                <h2 data-i18n="seeing_before_words">观看延伸了语言</h2>
+                <p data-i18n="seeing_description">正是观看出脱于你我四周之境自成小宇宙。我们所视与我们所知，二者从未如此泾渭分明，澄澈如镜。凝视是一种本能，更是一种选择。</p>
+                <button class="btn btn-primary" data-i18n="read_more">查看更多</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Vision -->
+    <section id="product" class="company-vision">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 vision-item text-center">
+                    <h3 data-i18n="empathy">将心比心</h3>
+                    <p data-i18n="empathy_description">为用户提供随时随地高效的互联网（空间互联网）服务(工具/内容/社交)。</p>
+                    <button class="btn btn-secondary" data-i18n="see_more">详情</button>
+                </div>
+                <div class="col-md-4 vision-item text-center">
+                    <h3 data-i18n="integrity">诚挚忠信</h3>
+                    <p data-i18n="integrity_description">坚持做有用、可靠、创新的产品，在功能、可靠、便捷、价格方面精锐形塑与持续优化更高质的TO B与TO C业务。</p>
+                    <button class="btn btn-secondary" data-i18n="see_more">详情</button>
+                </div>
+                <div class="col-md-4 vision-item text-center">
+                    <h3 data-i18n="elegance">从容超越</h3>
+                    <p data-i18n="elegance_description">让机器更顺应人类本能与惯性，使人与机器人沟通更敏捷与智慧。</p>
+                    <button class="btn btn-secondary" data-i18n="see_more">详情</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <h2 class="text-center" data-i18n="contact_us">联系我们</h2>
+            <div class="row contact-info">
+                <div class="col-md-4 contact-item text-center">
+                    <h3 data-i18n="call_us">致电我们</h3>
+                    <p data-i18n="office_telephone">座机号码: +86 0755 2690 3210 (停用)</p>
+                </div>
+                <div class="col-md-4 contact-item text-center">
+                    <h3 data-i18n="come_visit_us">洽谈会晤</h3>
+                    <p data-i18n="address">地址: 广东省深圳市宝安区新安街道兴东社区68区隆昌路10号美生创谷春谷305</p>
+                    <p data-i18n="postal_code">邮编: 518000</p>
+                </div>
+                <div class="col-md-4 contact-item text-center">
+                    <h3 data-i18n="send_message">电邮致函</h3>
+                    <p>
+                        <span data-i18n="email">邮箱</span>: 
+                        <a href="mailto:sales@netverseai.com" onclick="window.location.href='mailto:sales@netverseai.com'; return false;">
+                            sales@netverseai.com
+                        </a>
+                    </p>
+                    <p>
+                        <span data-i18n="other_inquiries">其他</span>: 
+                        <a href="mailto:HR@netverseai.com" onclick="window.location.href='mailto:HR@netverseai.com'; return false;">
+                            HR@netverseai.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 footer-content">
+                    <img src="logo/主标志-白红.png" alt="Netverse Logo" class="logo mb-3">
+                    <p data-i18n="footer_description">网境智能（Netverse Intelligence）专注于通过创新技术开发自适应机器人和具身智能（Embodied AI）解决方案，例如采用"大脑-小脑"分离架构，将多模态大模型（用于高级决策）与实时运动控制系统解耦。
+                    网境智能通过优先采用成本效益高的硬件（比传统解决方案便宜 90%），并分阶段实现商业化（从零部件到完整的行业解决方案），目标是推动工业自动化升级（例如制造业、物流）和万亿级通用服务市场（例如医疗保健、零售）。其核心价值在于通过平衡短期投资回报（例如 8 个月回本）与长期生态系统壁垒（例如开发者社区、多机器人协作系统），加速具身智能的普及。
+    </p>
+                    <button class="btn btn-outline-light" data-i18n="see_more">愿闻其详</button>
+                </div>
+                <div class="col-md-6 footer-info">
+                    <p><img src="logo/辅助图形.png" alt="Graphic" class="img"></p>
+
+                    <p data-i18n="office_opening_hours">办公/休息时间</p>
+                    <p data-i18n="mon_fri">周一至周五: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm</p>
+                    <p data-i18n="sat_sun">周六 & 周日: 休息</p>
+                    <p data-i18n="holidays">假日情况: 所有公众假日</p>
+                </div>
+            </div>
+            <!-- Mailchimp Form -->
+            <div class="subscribe">
+                <p data-i18n="subscribe_now">现在，是时候订阅我们了吧：）</p>
+                <form action="https://netverseai.us10.list-manage.com/subscribe/post?u=0ec44745bae6469b2fe7143a2&amp;id=7f4fe1b4e5&amp;f_id=00cd56e4f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div class="mc-field-group">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" data-i18n-placeholder="enter_email" placeholder="轻松输入邮箱地址 Enter your e-mail">
+                        <!-- <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="订阅 Subscribe"> -->
+                    </div>
+                    <div hidden><input type="hidden" name="tags" value="14567300"></div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_0ec44745bae6469b2fe7143a2_7f4fe1b4e5" tabindex="-1" value="">
+                    </div>
+                </form>
+                <p data-i18n="privacy_notice">请安心，保护好您的个人隐私是我们应有的教养：）</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer bottom -->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-md-12 copyright">
+					<!-- Copyright -->
+                    <p data-i18n="copyright">Copyright©2025 网境智能（深圳）有限公司</p>
+				</div>
+				<div class="col-xl-7 col-md-12 copyright">
+					<p>
+						<!-- ICP 备案号 -->
+						<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2025425599号-1</a>
+						
+						<!-- 公安 备案号 -->
+						<img style="margin-left: 20px;" src="icon/beian.png" />
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502009007"
+							target="_blank">粤公网安备 44030502009007号</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <!-- Mailchimp -->
+    <script type="text/javascript">
+    (function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+    </script>
+</body>
+</html>

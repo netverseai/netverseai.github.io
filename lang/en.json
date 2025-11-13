@@ -22,12 +22,14 @@
     "email": "E-mail",
     "other_inquiries": "Inquiries",
     "subscribe_now": "Subscribe now :）",
-    "dont_worry": "Don't worry. We won't send you spam :）",
+    "privacy_notice": "Don't worry. We won't send you spam :）",
+    "enter_email": "Enter your e-mail",
     "office_hours": "Office Opening Hours",
     "mon_fri": "Mon. - Fri: 09:00 am - 12:00 pm / 13:30 pm - 18:30 pm",
     "sat_sun": "Sat./Sun.: Day off",
     "holidays": "Holidays: All official holidays",
     "see_more": "SEE MORE",
+    "office_opening_hours": "Office Opening Hours",
     "footer_description": "Netverse Intelligence focuses on developing adaptive robotics and embodied AI solutions through innovative technologies like a split brain-cerebellum architecture, which decouples multimodal large models (for high-level decision-making) from real-time motion control systems. By prioritizing cost-effective hardware (90% cheaper than traditional solutions) and phased commercialization (from components to full industry solutions), Netverse targets industrial automation upgrades (e.g., manufacturing, logistics) and trillion-dollar general service markets (e.g., healthcare, retail). Their core value lies in accelerating embodied AI adoption by balancing short-term ROI (e.g., 8-month payback) with long-term ecosystem barriers (e.g., developer communities, multi-robot collaboration systems).",
     "copyright": "Copyright©2025 Netverse Intelligence Co., Ltd."
 }
