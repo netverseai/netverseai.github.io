@@ -131,7 +131,7 @@ html {
     background-image: url('./images/netverse_banner.jpeg');
     background-color: #ccc; /* Fallback color for debugging */
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
@@ -142,6 +142,36 @@ html {
     margin-top: 110px;
     min-height: 400px; /* Ensure visibility in Safari */
     -webkit-background-size: cover; /* Safari-specific */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: scroll; /* Safari fix for background images */
+    -webkit-transform: translateZ(0); /* Safari hardware acceleration */
+    transform: translateZ(0);
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+    .banner {
+        background-attachment: scroll !important;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+/* Banner fallback image */
+.banner-image-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.banner-image-fallback img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .banner::before {

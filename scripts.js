@@ -58,3 +58,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Safari 图片加载修复
+document.addEventListener('DOMContentLoaded', () => {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const banner = document.querySelector('.banner');
+    const bannerImg = new Image();
+    
+    // 预加载背景图片
+    bannerImg.src = './images/netverse_banner.jpeg';
+    
+    bannerImg.onload = () => {
+        console.log('Banner image loaded successfully');
+    };
+    
+    bannerImg.onerror = () => {
+        console.log('Banner image failed to load, showing fallback');
+        // 如果图片加载失败，显示备用图片
+        const fallback = document.querySelector('.banner-image-fallback');
+        if (fallback) {
+            fallback.style.display = 'block';
+            banner.style.backgroundImage = 'none';
+        }
+    };
+    
+    // Safari 特定处理
+    if (isSafari) {
+        console.log('Safari detected, applying special handling');
+        banner.style.backgroundAttachment = 'scroll';
+        banner.style.webkitBackfaceVisibility = 'hidden';
+        banner.style.backfaceVisibility = 'hidden';
+        
+        // 强制重绘
+        setTimeout(() => {
+            banner.style.display = 'none';
+            banner.offsetHeight; // 触发重排
+            banner.style.display = 'flex';
+        }, 100);
+    }
+});
